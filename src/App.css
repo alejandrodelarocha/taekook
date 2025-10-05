@@ -1,0 +1,105 @@
+/* src/App.css (Simplified for Tailwind) */
+
+/* Global Base Styles (Keep for custom fonts/colors/base resets) */
+:root {
+  --company-color: #c8bed7; /* Soft Lavender */
+  --text-color: #333;
+  --accent-color: #a79ad0;
+}
+
+* {
+  box-sizing: border-box; 
+}
+
+body {
+  /* Tailwind handles most font/margin resets, but keep this for final font-family */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f7f7f9;
+}
+
+/* --- Slideshow & Animation Keyframes (MUST stay here) --- */
+
+.background-slideshow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; 
+  z-index: 1; 
+}
+.background-slideshow .background-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 3s ease-in-out;
+  transform: scale(1.05); 
+  animation: bgPan 20s linear infinite alternate;
+  will-change: transform, opacity;
+}
+.background-slideshow .background-image:not(.active) {
+  opacity: 0 !important;
+}
+
+@keyframes bgPan {
+  0% { transform: scale(1.05) translate(0, 0); }
+  100% { transform: scale(1.1) translate(-5%, 5%); }
+}
+
+/* --- Animated Product Swarm Styles --- */
+
+/* Floating product base styles */
+.floating-product {
+  object-fit: contain;
+  will-change: transform;
+}
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+img {
+  object-fit: contain;
+  will-change: transform;
+}
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Keyframes for the continuous floating movement */
+@keyframes slowFloat {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(-30px, 45px); } 
+  50% { transform: translate(45px, -30px); } 
+  75% { transform: translate(-15px, 60px); } 
+  100% { transform: translate(0, 0); }
+}
+
+/* --- Components that need custom CSS (or are complex) --- */
+
+/* Hero Banner Ticker */
+.hero-banner-ticker p {
+    animation: ticker 40s linear infinite;
+    white-space: nowrap;
+    overflow: hidden;
+}
+@keyframes ticker {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+@keyframes floatX {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(var(--amplitudeX)); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes floatY {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(var(--amplitudeY)); }
+  100% { transform: translateY(0); }
+}
