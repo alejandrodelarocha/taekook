@@ -1,6 +1,5 @@
-<p align="center" style="background: white">
-  <img src="./public/taekook-logo.png" alt="TAEKOOK Logo" width="400"/>
-</p>
+
+![logo](https://github.com/user-attachments/assets/11621728-c17a-4260-9768-2e7c27b4327d)
 
 <h1 align="center">TAEKOOK Restaurant - Modern Digital Experience</h1>
 
