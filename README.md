@@ -1,5 +1,5 @@
 
-![logo](https://github.com/user-attachments/assets/11621728-c17a-4260-9768-2e7c27b4327d)
+<img src="https://github.com/user-attachments/assets/11621728-c17a-4260-9768-2e7c27b4327d" style="width:200px; border-radius:50%" />
 
 <h1 align="center">TAEKOOK Restaurant - Modern Digital Experience</h1>
 
