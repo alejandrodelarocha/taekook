@@ -5,7 +5,15 @@
 
 A cutting-edge restaurant website that combines elegant design with AI-powered features for an enhanced dining experience. Built with React, TypeScript, and modern web technologies.
 
+[https://taekookboba.com](https://taekookboba.com)
+
 ---
+
+
+https://github.com/user-attachments/assets/3eda61f4-c54a-4962-b1e3-5f04144445e6
+
+
+
 
 ## 🍽️ Key Features
 
@@ -23,6 +31,10 @@ A cutting-edge restaurant website that combines elegant design with AI-powered f
 - **JSON Product Management**: Intuitive interface for managing product catalog
 - **Real-time Updates**: Changes reflect immediately across the website
 - **User Access Control**: Secure authentication for staff with different permission levels
+  
+<img width="951" height="911" alt="Screenshot 2025-10-05 at 2 32 44 p m" src="https://github.com/user-attachments/assets/e1d9883b-74c9-49be-a46e-c3029453a5cc" />
+
+  
 
 ## 🛠️ Technical Stack
 
